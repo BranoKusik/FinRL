@@ -243,9 +243,9 @@ def main():
     )
     # env_trade, obs_trade = e_trade_gym.get_sb_env()
 
-    trained_moedl = trained_a2c
+    trained_model = trained_a2c
     df_account_value_a2c, df_actions_a2c = DRLAgent.DRL_prediction(
-        model=trained_moedl, environment=e_trade_gym
+        model=trained_model, environment=e_trade_gym
     )
 
     trained_moedl = trained_ddpg
